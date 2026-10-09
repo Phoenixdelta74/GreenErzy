@@ -1,49 +1,29 @@
 import HeroSection from "@/components/home/HeroSection";
-import ProductQuestion from "@/components/home/ProductQuestion";
-import LinearToCircular from "@/components/home/LinearToCircular";
-import ProductsToPossibilities from "@/components/home/ProductsToPossibilities";
-import EcosystemNetwork from "@/components/home/EcosystemNetwork";
-import TechPillarsTeaser from "@/components/home/TechPillarsTeaser";
-import ProductJourneyStepper from "@/components/home/ProductJourneyStepper";
-import ImpactCards from "@/components/home/ImpactCards";
-import RegionalToGlobalMap from "@/components/home/RegionalToGlobalMap";
-import PathwaysGrid from "@/components/home/PathwaysGrid";
+import ProblemSection from "@/components/home/ProblemSection";
+import HowItWorks from "@/components/home/HowItWorks";
+import WhoItsFor from "@/components/home/WhoItsFor";
+import StartingInAssam from "@/components/home/StartingInAssam";
 import FinalCta from "@/components/home/FinalCta";
 
 export default function HomePage() {
   return (
     <div className="flex flex-col w-full">
-      {/* 1. Hero */}
+      {/* 1. Hero: what we do, in one line */}
       <HeroSection />
 
-      {/* 2. The Question */}
-      <ProductQuestion />
+      {/* 2. Problem */}
+      <ProblemSection />
 
-      {/* 3. Linear to Circular Transformation */}
-      <LinearToCircular />
+      {/* 3. Solution: five simple stages */}
+      <HowItWorks />
 
-      {/* 4. Products to Possibilities */}
-      <ProductsToPossibilities />
+      {/* 4. Who it's for */}
+      <WhoItsFor />
 
-      {/* 5. Interactive Ecosystem Network */}
-      <EcosystemNetwork />
+      {/* 5. Where we start, with goals labelled as goals */}
+      <StartingInAssam />
 
-      {/* 6. Technology Pillars */}
-      <TechPillarsTeaser />
-
-      {/* 7. One Product. One Journey */}
-      <ProductJourneyStepper />
-
-      {/* 8. Impact Grid */}
-      <ImpactCards />
-
-      {/* 9. Northeast -> India -> Global */}
-      <RegionalToGlobalMap />
-
-      {/* 10. Six Participation Pathways */}
-      <PathwaysGrid />
-
-      {/* 11. Final Cinematic Call-to-Action */}
+      {/* 6. Call to action */}
       <FinalCta />
     </div>
   );

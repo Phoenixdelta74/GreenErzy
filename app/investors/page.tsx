@@ -1,163 +1,164 @@
 import React from "react";
 import Link from "next/link";
-import { TrendingUp, ShieldCheck, ArrowRight, Lock, Database, Layers, Sparkles, Building2, CheckCircle2 } from "lucide-react";
+import { TrendingUp, ArrowRight, Lock, CheckCircle2 } from "lucide-react";
 
 export const metadata = {
-  title: "Investor Relations & Infrastructure Thesis | GreenERZY EcoTech",
+  title: "Investors | GreenERZY EcoTech",
   description:
-    "Explore the investment thesis and business model behind building the critical infrastructure for the Smart Circular Electronics Economy.",
+    "Why GreenERZY exists, how it makes money, and where we are today. Request our investor information.",
 };
 
 export default function InvestorsPage() {
-  const thesisPillars = [
+  // TODO: add a source link for the market figures below before launch.
+  const whyNow = [
     {
-      title: "Massive & Accelerating Electronics Market",
-      desc: "India is the 3rd largest e-waste generator globally, generating over 1.7 million metric tonnes annually with less than 15% processed through formal, verified channels.",
+      title: "A large, growing problem",
+      desc: "India is one of the world's largest producers of e-waste, at over 1.7 million tonnes a year. Less than 15% goes through formal, safe recycling.",
     },
     {
-      title: "Regulatory Tailwinds & Mandatory EPR",
-      desc: "Stricter CPCB E-Waste Management Rules and EU Digital Product Passport mandates make digital traceability and recycling credits an essential corporate compliance priority.",
+      title: "New rules make it urgent",
+      desc: "India's e-waste rules and the EU's digital product passport rules mean brands must now prove where their devices end up.",
     },
     {
-      title: "Fragmented Ecosystem Demands Connective Rails",
-      desc: "The electronics afterlife is currently siloed between unorganized scrapyards, independent repairers, and disparate recyclers. GreenERZY builds the unifying digital and physical coordination layer.",
+      title: "Nobody connects the pieces",
+      desc: "Brands, repair shops, scrap collectors and recyclers work separately today. GreenERZY links them into one system.",
     },
     {
-      title: "High-Margin Urban Mining Economics",
-      desc: "Extracting gold, copper, and neodymium from printed circuit boards offers up to 50x higher ore grade concentration compared to traditional virgin open-pit mining.",
-    },
-    {
-      title: "Scalable Regional-to-Global Blueprint",
-      desc: "Proving capital-efficient unit economics across Assam and Northeast India provides a robust, stress-tested blueprint ready for rapid pan-India and emerging-market scaling.",
-    },
-    {
-      title: "Multiple Compounding Revenue Streams",
-      desc: "Diversified monetization spanning SaaS software, EPR compliance transactions, hydrometallurgical material offtake, and secondary hardware certification fees.",
+      title: "Valuable materials",
+      desc: "Circuit boards hold far more gold and copper per tonne than mined ore, which makes recovery worth doing well.",
     },
   ];
 
-  const businessModelStreams = [
-    { title: "Digital Infrastructure & SaaS", desc: "Enterprise subscriptions for OEMs and brand owners to issue, track, and manage Digital Product Passports across their product portfolios." },
-    { title: "EPR & Compliance Services", desc: "Automated aggregation, custody verification, and digital filing packages generating compliance facilitation fees." },
-    { title: "API & Enterprise Integrations", desc: "Usage-based API fees for ERP platforms (SAP, Oracle) and retail trade-in kiosks querying real-time device provenance." },
-    { title: "Secondary Market Certification", desc: "Inspection, diagnostics, and warranty issuance fees for graded pre-owned hardware entering secondary markets." },
-    { title: "Resource Intelligence & Scrap Offtake", desc: "Precious and strategic metal recovery margins generated from hydrometallurgical refinery partnerships." },
-    { title: "Data & Lifecycle Analytics", desc: "Aggregated, anonymized material density heatmaps and lifecycle reliability reports for policymakers and insurers." },
+  const revenue = [
+    {
+      title: "Software for brands",
+      desc: "Subscriptions for manufacturers and retailers to issue and manage digital ID cards for their devices, plus usage fees for connecting their systems.",
+    },
+    {
+      title: "Compliance and certification fees",
+      desc: "Fees for handling e-waste reporting, and for inspecting and certifying second-hand devices before resale.",
+    },
+    {
+      title: "Recovered materials",
+      desc: "A share of the value of the gold, copper and other metals recovered through our recycling partners.",
+    },
+  ];
+
+  const goals = [
+    { value: "100,000+", label: "devices given a digital ID" },
+    { value: "50+", label: "partner businesses" },
+    { value: "500+", label: "green jobs" },
   ];
 
   return (
     <div className="pt-28 pb-16 w-full circuit-grid">
-      
       {/* Hero */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center space-y-6">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 text-xs font-mono tracking-wider uppercase">
           <TrendingUp className="w-3.5 h-3.5" />
-          <span>Capital &amp; Platform Thesis</span>
+          <span>For investors</span>
         </div>
 
         <h1 className="font-display font-extrabold text-4xl sm:text-6xl text-white tracking-tight leading-tight max-w-4xl mx-auto">
-          Building Infrastructure for a <br />
-          <span className="text-gradient-emerald">Circular Electronics Economy.</span>
+          Turning India’s e-waste <br />
+          <span className="text-gradient-emerald">into a working business.</span>
         </h1>
 
         <p className="text-base sm:text-lg text-slate-300 font-light max-w-3xl mx-auto leading-relaxed">
-          GreenERZY represents a generational opportunity at the nexus of deep technology, hardware lifecycle intelligence, critical minerals security, and climate infrastructure.
+          GreenERZY connects the companies that make, fix and recycle electronics, and will earn from software, compliance services and recovered metals.
         </p>
-
-        {/* Private Data Room Notice */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 text-[11px] font-mono text-slate-400 max-w-xl mx-auto">
-          <Lock className="w-3.5 h-3.5 text-amber-400 flex-shrink-0" />
-          <span>Detailed financial models, cap table, and private data room access are available to verified institutional investors upon inquiry.</span>
-        </div>
       </section>
 
-      {/* Investment Thesis (6 Pillars) */}
+      {/* Why now */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center space-y-3 mb-12">
-          <span className="text-xs font-mono uppercase tracking-widest text-emerald-400">Market Dynamics</span>
-          <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-white">
-            The Investment Thesis
-          </h2>
-          <p className="text-xs sm:text-sm text-slate-400 font-light">
-            Why circular electronics infrastructure is the defining clean-tech category of the next decade.
-          </p>
+          <span className="text-xs font-mono uppercase tracking-widest text-emerald-400">The opportunity</span>
+          <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-white">Why this, and why now</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {thesisPillars.map((tp, idx) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {whyNow.map((item, idx) => (
             <div
-              key={tp.title}
+              key={item.title}
               className="p-7 rounded-2xl bg-[#090F13] border border-slate-800 hover:border-emerald-500/40 transition-colors space-y-3 text-left"
             >
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-mono text-emerald-400 font-bold">0{idx + 1}</span>
-                <CheckCircle2 className="w-4 h-4 text-emerald-400/60" />
-              </div>
-              <h3 className="font-display font-bold text-lg text-white">
-                {tp.title}
-              </h3>
-              <p className="text-xs text-slate-300 leading-relaxed font-light">
-                {tp.desc}
-              </p>
+              <span className="text-xs font-mono text-emerald-400 font-bold">0{idx + 1}</span>
+              <h3 className="font-display font-bold text-lg text-white">{item.title}</h3>
+              <p className="text-sm text-slate-300 leading-relaxed font-light">{item.desc}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* High-Level Business Model */}
+      {/* Business model */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="rounded-3xl bg-[#0B1216] border border-emerald-500/30 p-8 sm:p-12 shadow-2xl space-y-8 text-left">
           <div className="space-y-2">
-            <span className="text-xs font-mono uppercase tracking-widest text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded border border-emerald-500/20">
-              Commercial Engine
-            </span>
-            <h2 className="font-display font-extrabold text-3xl text-white">
-              Diversified High-Margin Business Model
-            </h2>
+            <span className="text-xs font-mono uppercase tracking-widest text-emerald-400">Business model</span>
+            <h2 className="font-display font-extrabold text-3xl text-white">Three ways we earn</h2>
             <p className="text-sm text-slate-300 font-light max-w-2xl">
-              A hybrid SaaS and infrastructure revenue model combining recurring enterprise subscriptions with transaction-based volume monetization.
+              Steady subscription income from brands, plus fees and material revenue that grow with every device we handle.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {businessModelStreams.map((bm) => (
-              <div key={bm.title} className="p-5 rounded-xl bg-slate-950/80 border border-slate-800 space-y-1.5">
-                <h3 className="font-display font-bold text-sm text-white text-emerald-300">
-                  {bm.title}
-                </h3>
-                <p className="text-xs text-slate-400 leading-relaxed font-light">
-                  {bm.desc}
-                </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {revenue.map((r) => (
+              <div key={r.title} className="p-6 rounded-xl bg-slate-950/80 border border-slate-800 space-y-2">
+                <h3 className="font-display font-bold text-base text-emerald-300">{r.title}</h3>
+                <p className="text-sm text-slate-400 leading-relaxed font-light">{r.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Direct Funding CTA matching Section 14 */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center space-y-6">
-        <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-[#0C151A] via-[#090F13] to-[#040708] border border-emerald-500/40 space-y-6 glow-emerald">
-          <span className="text-xs font-mono uppercase tracking-widest text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">
-            Strategic Engagement
-          </span>
-          <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-white">
-            If You See the Opportunity, Let’s Talk.
-          </h2>
-          <p className="text-sm text-slate-300 font-light max-w-xl mx-auto">
-            We welcome conversations with venture capital, family offices, and strategic industrial partners committed to scalable sustainable technology.
+      {/* Where we are */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="space-y-3 mb-8">
+          <span className="text-xs font-mono uppercase tracking-widest text-emerald-400">Where we are</span>
+          <h2 className="font-display font-extrabold text-3xl text-white">Starting in Assam</h2>
+          <p className="text-sm text-slate-300 font-light max-w-2xl">
+            We are building our first collection hub and partner network in Guwahati. The Northeast is our testing ground before we grow across India.
           </p>
-          <div className="pt-2">
-            <Link
-              href="/join?tab=investor"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-400 hover:from-emerald-400 hover:to-emerald-300 text-slate-950 font-bold text-xs font-mono tracking-wider transition-all shadow-xl shadow-emerald-500/20"
-            >
-              <span>REQUEST INVESTOR INFORMATION</span>
-              <ArrowRight className="w-4 h-4" />
-            </Link>
+        </div>
+        <div className="rounded-2xl bg-[#090F13] border border-slate-800 p-7">
+          <p className="text-xs text-slate-400 mb-5">Our goals for the Northeast. These are targets, not results yet.</p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {goals.map((g) => (
+              <div key={g.label} className="flex items-start gap-3">
+                <CheckCircle2 className="w-5 h-5 text-emerald-400/60 mt-1" />
+                <div>
+                  <p className="font-display font-extrabold text-2xl text-white">{g.value}</p>
+                  <p className="text-sm text-slate-300">{g.label}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
+      {/* CTA */}
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center space-y-6">
+        <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-[#0C151A] via-[#090F13] to-[#040708] border border-emerald-500/40 space-y-6 glow-emerald">
+          <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-white">Let’s talk.</h2>
+          <p className="text-sm text-slate-300 font-light max-w-xl mx-auto">
+            We welcome conversations with venture funds, family offices and strategic partners.
+          </p>
+          <div className="pt-2">
+            <Link
+              href="/join?tab=investor"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-400 hover:from-emerald-400 hover:to-emerald-300 text-slate-950 font-bold text-sm tracking-wide transition-all shadow-xl shadow-emerald-500/20"
+            >
+              <span>Request investor information</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+          <p className="inline-flex items-center gap-2 text-xs text-slate-400">
+            <Lock className="w-3.5 h-3.5 text-amber-400" />
+            Financials and the full deck are shared privately on request.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }

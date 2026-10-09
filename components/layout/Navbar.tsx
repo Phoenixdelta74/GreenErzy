@@ -24,13 +24,12 @@ export default function Navbar() {
   }, [pathname]);
 
   const navLinks = [
-    { name: "Our Vision", href: "/vision" },
-    { name: "The Ecosystem", href: "/ecosystem" },
-    { name: "Technology", href: "/technology" },
+    { name: "How It Works", href: "/ecosystem" },
+    { name: "Who It's For", href: "/industries" },
     { name: "Impact", href: "/impact" },
-    { name: "Industries", href: "/industries" },
     { name: "About", href: "/about" },
-    { name: "Insights", href: "/insights" },
+    { name: "Investors", href: "/investors" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -65,7 +64,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden xl:flex items-center gap-1 bg-slate-900/60 border border-slate-800/80 rounded-full px-4 py-1.5 backdrop-blur-md">
+        <nav className="hidden lg:flex items-center gap-1 bg-slate-900/60 border border-slate-800/80 rounded-full px-4 py-1.5 backdrop-blur-md">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
@@ -87,28 +86,22 @@ export default function Navbar() {
         {/* Right Action CTAs */}
         <div className="hidden lg:flex items-center gap-3">
           <Link
-            href="/investors"
-            className="text-xs font-medium text-slate-300 hover:text-emerald-300 px-3 py-2 rounded-lg transition-colors flex items-center gap-1"
-          >
-            Investors
-          </Link>
-          <Link
             href="/join"
             className="relative group overflow-hidden px-4 py-2 rounded-full bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 text-slate-950 text-xs font-semibold tracking-wide transition-all duration-200 shadow-md shadow-emerald-500/20 flex items-center gap-1.5 focus:ring-2 focus:ring-emerald-400"
           >
             <Sparkles className="w-3.5 h-3.5 text-slate-950" />
-            <span>Join the Vision</span>
+            <span>Work with us</span>
             <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </Link>
         </div>
 
         {/* Mobile Hamburger Button */}
-        <div className="flex xl:hidden items-center gap-2">
+        <div className="flex lg:hidden items-center gap-2">
           <Link
             href="/join"
             className="sm:inline-flex hidden px-3 py-1.5 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-xs font-semibold items-center gap-1"
           >
-            Join
+            Work with us
             <ArrowUpRight className="w-3 h-3" />
           </Link>
           <button
@@ -123,7 +116,7 @@ export default function Navbar() {
 
       {/* Mobile Drawer Menu */}
       {isOpen && (
-        <div className="xl:hidden bg-[#0A0F12] border-b border-emerald-500/20 px-4 pt-3 pb-6 space-y-2 animate-fadeIn shadow-2xl">
+        <div className="lg:hidden bg-[#0A0F12] border-b border-emerald-500/20 px-4 pt-3 pb-6 space-y-2 animate-fadeIn shadow-2xl">
           <div className="grid grid-cols-2 gap-2 pt-2 pb-3">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
@@ -144,23 +137,11 @@ export default function Navbar() {
           </div>
           <div className="border-t border-slate-800 pt-3 flex flex-col gap-2">
             <Link
-              href="/investors"
-              className="px-3 py-2 text-sm text-slate-300 hover:text-white rounded-lg"
-            >
-              Investor Relations & Inquiries
-            </Link>
-            <Link
-              href="/contact"
-              className="px-3 py-2 text-sm text-slate-300 hover:text-white rounded-lg"
-            >
-              Contact GreenERZY
-            </Link>
-            <Link
               href="/join"
               className="w-full mt-2 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-sm font-semibold text-center flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20"
             >
               <Sparkles className="w-4 h-4" />
-              <span>Explore All 6 Participation Pathways</span>
+              <span>Work with us</span>
               <ArrowUpRight className="w-4 h-4" />
             </Link>
           </div>

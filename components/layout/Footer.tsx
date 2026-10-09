@@ -28,7 +28,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-xs text-slate-400 max-w-md">
-              Building the Smart Circular Electronics Economy — connecting products, people, businesses, resources and intelligence across the electronics lifecycle.
+              Helping electronics last longer, and making sure the materials inside are used again.
             </p>
           </div>
 
@@ -114,7 +114,7 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/join?tab=build" className="hover:text-emerald-300 transition-colors">
+                <Link href="/join?tab=builder" className="hover:text-emerald-300 transition-colors">
                   Build With Us
                 </Link>
               </li>
