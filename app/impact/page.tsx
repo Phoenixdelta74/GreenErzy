@@ -4,21 +4,21 @@ import { TrendingUp, Leaf, Users, ShieldCheck, Activity, Sparkles, ArrowRight, C
 import FinalCta from "@/components/home/FinalCta";
 
 export const metadata = {
-  title: "Systemic Impact & Future-Ready Metrics | GreenERZY EcoTech",
+  title: "Impact | GreenERZY EcoTech",
   description:
-    "Circularity is an economic opportunity. Explore our economic, environmental, social, and institutional governance impact pillars.",
+    "What GreenERZY aims to change for people, businesses and the environment, and the goals we are working towards.",
 };
 
 export default function ImpactPage() {
   const futureMetrics = [
-    { label: "Products Connected", status: "Pilot Phase", target: "100,000+ Units Target", note: "Integrating pilot batches across Assam" },
-    { label: "Lifecycle Events Recorded", status: "Pilot Phase", target: "500,000+ Checkpoints", note: "Cryptographic custody handoffs" },
-    { label: "Repair / Reuse Activity", status: "Active Pilot", target: "75% Life-Extension", note: "Authorized technician network repairs" },
-    { label: "Strategic Resources Recovered", status: "Lab Verified", target: ">95% Au, Cu, Li", note: "Hydrometallurgical extraction assays" },
-    { label: "Businesses Connected", status: "Onboarding", target: "50+ Regional Partners", note: "OEMs, recyclers, and spoke nodes" },
-    { label: "Livelihoods Supported", status: "Active Scaling", target: "500+ Green Tech Jobs", note: "Technicians and reverse logistics operators" },
-    { label: "Communities Reached", status: "Active Scaling", target: "25+ Districts in NE", note: "Takeback campaigns & university workshops" },
-    { label: "Carbon Abated (Scope 3)", status: "Methodology Review", target: "Verified Tonnes CO2e", note: "Third-party LCA methodology in progress" },
+    { label: "Devices with a digital ID", status: "Goal", target: "100,000+", note: "Starting with pilot batches in Assam" },
+    { label: "Device updates recorded", status: "Goal", target: "500,000+", note: "Sales, repairs, drop-offs and recycling" },
+    { label: "Longer device life", status: "Goal", target: "75% longer", note: "Through repair and reuse" },
+    { label: "Metals recovered", status: "Goal", target: "95%+", note: "Of the gold, copper and lithium inside" },
+    { label: "Partner businesses", status: "Goal", target: "50+", note: "Brands, repair shops and recyclers" },
+    { label: "Green jobs", status: "Goal", target: "500+", note: "Technicians, collectors and drivers" },
+    { label: "Districts reached", status: "Goal", target: "25+", note: "In the Northeast, through drop-off drives and workshops" },
+    { label: "Carbon saved", status: "Goal", target: "To be measured", note: "We are choosing an independent method to measure it" },
   ];
 
   return (
@@ -28,16 +28,16 @@ export default function ImpactPage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center space-y-6">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 text-xs font-mono tracking-wider uppercase">
           <TrendingUp className="w-3.5 h-3.5" />
-          <span>Quad-Pillar Value Creation</span>
+          <span>Our impact</span>
         </div>
 
         <h1 className="font-display font-extrabold text-4xl sm:text-6xl text-white tracking-tight leading-tight max-w-4xl mx-auto">
-          Circularity Is an <br />
-          <span className="text-gradient-emerald">Economic Opportunity.</span>
+          Good for people, business <br />
+          <span className="text-gradient-emerald">and the planet.</span>
         </h1>
 
         <p className="text-base sm:text-lg text-slate-300 font-light max-w-3xl mx-auto leading-relaxed">
-          Transforming electronics from a disposable linear burden into a continuous economic flywheel for businesses, citizens, and the environment.
+          When devices last longer and their metals are reused, everyone gains: owners save money, local businesses grow, and less is mined and burned.
         </p>
       </section>
 
@@ -51,23 +51,23 @@ export default function ImpactPage() {
               <span className="text-xs font-mono text-emerald-400 uppercase tracking-widest">Pillar 01</span>
               <TrendingUp className="w-6 h-6 text-emerald-400" />
             </div>
-            <h2 className="font-display font-bold text-2xl text-white">Economic Impact</h2>
+            <h2 className="font-display font-bold text-2xl text-white">For the economy</h2>
             <ul className="space-y-2.5 text-xs text-slate-300 leading-relaxed font-light">
               <li className="flex items-start gap-2">
                 <span className="text-emerald-400 font-bold">&bull;</span>
-                <span>Enable new digital and physical services around electronics across trade-ins and warranties.</span>
+                <span>New services such as trade-ins, warranties and certified second-hand devices.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-emerald-400 font-bold">&bull;</span>
-                <span>Extend product value through verified diagnostics, component swaps, and secondary refurbishment.</span>
+                <span>Devices keep their value longer through repair and refurbishment.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-emerald-400 font-bold">&bull;</span>
-                <span>Improve visibility of recoverable materials and economic value locked in dormant hardware.</span>
+                <span>We know where valuable materials are, so they can be recovered.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-emerald-400 font-bold">&bull;</span>
-                <span>Support new micro-enterprises and local franchise repairers across tier-2 and tier-3 towns.</span>
+                <span>More work for small repair shops in smaller towns.</span>
               </li>
             </ul>
           </div>
@@ -78,23 +78,23 @@ export default function ImpactPage() {
               <span className="text-xs font-mono text-teal-400 uppercase tracking-widest">Pillar 02</span>
               <Leaf className="w-6 h-6 text-teal-400" />
             </div>
-            <h2 className="font-display font-bold text-2xl text-white">Environmental Impact</h2>
+            <h2 className="font-display font-bold text-2xl text-white">For the environment</h2>
             <ul className="space-y-2.5 text-xs text-slate-300 leading-relaxed font-light">
               <li className="flex items-start gap-2">
                 <span className="text-teal-400 font-bold">&bull;</span>
-                <span>Support responsible, zero-landfill end-of-life electronics management.</span>
+                <span>Old devices are handled safely, not dumped.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-teal-400 font-bold">&bull;</span>
-                <span>Improve recovery yields of strategic minerals (Gold, Copper, Lithium, Rare Earths).</span>
+                <span>More gold, copper, lithium and rare earths recovered.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-teal-400 font-bold">&bull;</span>
-                <span>Reduce avoidable loss of critical materials to informal hazardous burning and slag.</span>
+                <span>Less open burning of electronic waste.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-teal-400 font-bold">&bull;</span>
-                <span>Dramatically slash virgin mining footprint and embodied supply-chain carbon emissions.</span>
+                <span>Less new mining, and less carbon from making new materials.</span>
               </li>
             </ul>
           </div>
@@ -105,19 +105,19 @@ export default function ImpactPage() {
               <span className="text-xs font-mono text-cyan-400 uppercase tracking-widest">Pillar 03</span>
               <Users className="w-6 h-6 text-cyan-400" />
             </div>
-            <h2 className="font-display font-bold text-2xl text-white">Social &amp; Livelihood Impact</h2>
+            <h2 className="font-display font-bold text-2xl text-white">For people</h2>
             <ul className="space-y-2.5 text-xs text-slate-300 leading-relaxed font-light">
               <li className="flex items-start gap-2">
                 <span className="text-cyan-400 font-bold">&bull;</span>
-                <span>Formalize dignified pathways for independent repair technicians and scrap collectors.</span>
+                <span>Safer, fairer work for repair technicians and scrap collectors.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-cyan-400 font-bold">&bull;</span>
-                <span>Provide technical skilling and certification in advanced diagnostic hardware tools.</span>
+                <span>Training and certificates in modern repair skills.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-cyan-400 font-bold">&bull;</span>
-                <span>Connect students, academic researchers, and local youth with high-tech GreenTech employment.</span>
+                <span>Green jobs for students and young people in the region.</span>
               </li>
             </ul>
           </div>
@@ -128,19 +128,19 @@ export default function ImpactPage() {
               <span className="text-xs font-mono text-emerald-400 uppercase tracking-widest">Pillar 04</span>
               <ShieldCheck className="w-6 h-6 text-emerald-400" />
             </div>
-            <h2 className="font-display font-bold text-2xl text-white">Governance &amp; Institutional Impact</h2>
+            <h2 className="font-display font-bold text-2xl text-white">For trust and transparency</h2>
             <ul className="space-y-2.5 text-xs text-slate-300 leading-relaxed font-light">
               <li className="flex items-start gap-2">
                 <span className="text-emerald-400 font-bold">&bull;</span>
-                <span>Improve end-to-end supply chain visibility and eliminate fraudulent compliance certificates.</span>
+                <span>Clear records of where each device went, so fake recycling certificates are harder to pass off.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-emerald-400 font-bold">&bull;</span>
-                <span>Automate audit-ready CPCB / EPR filings for electronics manufacturers and importers.</span>
+                <span>Easier e-waste reporting for brands and importers.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-emerald-400 font-bold">&bull;</span>
-                <span>Provide policymakers with empirical material density data for national resource planning.</span>
+                <span>Better data for government planning.</span>
               </li>
             </ul>
           </div>
@@ -156,15 +156,15 @@ export default function ImpactPage() {
               <div className="flex items-center gap-2">
                 <Activity className="w-5 h-5 text-emerald-400" />
                 <h3 className="font-display font-bold text-2xl text-white">
-                  Verified Impact Metrics Tracker
+                  Our goals
                 </h3>
               </div>
               <p className="text-xs text-slate-400 font-mono mt-1">
-                Data Integrity Policy: GreenERZY reports only verified pilot statistics. No fabricated estimations.
+                These are targets we are working towards, not results yet. We will publish real numbers as we reach them.
               </p>
             </div>
             <span className="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">
-              Live &bull; Pilot Phase Deployment
+              Northeast India
             </span>
           </div>
 

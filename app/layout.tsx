@@ -25,7 +25,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "GreenERZY EcoTech | Building the Smart Circular Electronics Economy",
   description:
-    "GreenERZY is building a technology-enabled ecosystem connecting the lifecycle of electronics — from creation and commerce to use, repair, reuse, recovery and resource regeneration.",
+    "GreenERZY helps electronics last longer, get repaired, and get recycled cleanly, so the gold, copper and lithium inside can be used again. Starting in Assam, India.",
   keywords: [
     "Smart Circular Electronics Economy",
     "Digital Product Identity",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "GreenERZY EcoTech | Building the Smart Circular Electronics Economy",
     description:
-      "Connecting products, people, businesses, resources and intelligence across the electronics lifecycle.",
+      "Old electronics still hold value. We make sure it isn't thrown away.",
     url: "https://greenerzy.com",
     siteName: "GreenERZY EcoTech",
     locale: "en_US",

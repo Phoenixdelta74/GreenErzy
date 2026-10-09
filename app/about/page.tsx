@@ -17,16 +17,16 @@ export default function AboutPage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center space-y-6">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 text-xs font-mono tracking-wider uppercase">
           <ShieldCheck className="w-3.5 h-3.5" />
-          <span>Institutional Profile</span>
+          <span>About us</span>
         </div>
 
         <h1 className="font-display font-extrabold text-4xl sm:text-6xl text-white tracking-tight leading-tight max-w-4xl mx-auto">
-          We Are Building What We Believe <br />
-          the Electronics Economy <span className="text-gradient-emerald">Needs Next.</span>
+          Giving old electronics <br />
+          <span className="text-gradient-emerald">a better ending.</span>
         </h1>
 
         <p className="text-base sm:text-lg text-slate-300 font-light max-w-3xl mx-auto leading-relaxed">
-          GreenERZY EcoTech Pvt. Ltd. is a technology-led GreenTech / CleanTech / DeepTech enterprise pioneering the Smart Circular Electronics Economy.
+          GreenERZY EcoTech Pvt. Ltd. is a clean-tech company from Guwahati, Assam. We help electronics last longer and make sure the materials inside are reused.
         </p>
       </section>
 
@@ -34,20 +34,20 @@ export default function AboutPage() {
       <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="rounded-3xl bg-[#090F13] border border-emerald-500/30 p-8 sm:p-12 space-y-6 shadow-2xl text-left">
           <span className="text-xs font-mono uppercase tracking-widest text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded border border-emerald-500/20">
-            Our Foundation &amp; Philosophy
+            Our story
           </span>
           <h2 className="font-display font-extrabold text-2xl sm:text-3xl text-white">
-            From Fragmented Scrapping to Resource Intelligence
+            Why we started
           </h2>
           <div className="space-y-4 text-sm text-slate-300 leading-relaxed font-light">
             <p>
-              Electronics are the lifeblood of modern society, driving communication, work, mobility, and computation. Yet, the economic model governing their afterlife has remained primitive for decades: make, sell, use, and discard into informal scrapyards where precious minerals are burnt or lost forever.
+              We all depend on phones and laptops. But when they stop working, most end up in informal scrapyards, where they are burned and the valuable metals inside are lost.
             </p>
             <p>
-              GreenERZY EcoTech was founded on a simple conviction: <strong>The product may reach an end, but its resources never have to.</strong> We unite cutting-edge digital infrastructure—cryptographic product passports, automated computer vision diagnostics, and reverse logistics routing—with advanced hydrometallurgical recovery to ensure that hardware remains productive for longer and materials circulate indefinitely.
+              We started GreenERZY with one belief: <strong>a product may reach its end, but its materials don’t have to.</strong> We give each device a digital ID card, connect it to local repair shops, collect it when it is done, and recover its metals cleanly.
             </p>
             <p>
-              Headquartered with initial operations rooted in Assam and Northeast India, we are proving that decentralized circular models can thrive in challenging regional geographies before scaling nationally across India and connecting with global circular markets.
+              We are starting in Assam and the Northeast. If it works here, it can work across India.
             </p>
           </div>
         </div>
@@ -121,7 +121,7 @@ export default function AboutPage() {
             </h3>
           </div>
           <p className="text-xs text-slate-300 font-light leading-relaxed">
-            In strict compliance with our company governance brief, GreenERZY adheres to complete factual integrity across all public disclosures:
+            What you can expect from us:
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
             <div className="p-4 rounded-xl bg-[#090F13] border border-slate-800 space-y-1">
@@ -134,10 +134,10 @@ export default function AboutPage() {
             </div>
             <div className="p-4 rounded-xl bg-[#090F13] border border-slate-800 space-y-1">
               <span className="text-xs font-bold text-white flex items-center gap-1.5">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" /> Zero Fabricated Metrics
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" /> Honest numbers
               </span>
               <p className="text-[11px] text-slate-400 font-mono">
-                All reported metrics originate from empirical pilot audits and certified laboratory assays.
+                Goals are labelled as goals. We only call something a result once it has happened.
               </p>
             </div>
             <div className="p-4 rounded-xl bg-[#090F13] border border-slate-800 space-y-1">
